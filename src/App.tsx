@@ -1,26 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import State from "./components/State";
+import StateInput from "./components/StateInput";
+import Reducer from "./components/Reducer";
+import UseEffect from "./components/UseEffect";
+import UseRef from "./components/UseRef";
+import UseLayoutEffect from "./components/UseLayoutEffect";
+import UseContext from "./components/UseContext";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <State/>
+            <StateInput/>
+            <Reducer/>
+            <UseEffect/>
+            <UseRef/>
+            <UseLayoutEffect/>
+            <UseContext/>
+        </div>
+    );
 }
 
 export default App;
